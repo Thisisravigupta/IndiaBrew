@@ -40,7 +40,7 @@ body{
 .btn:hover{
     border: 1px solid var(--purple);
     color: var(--purple);
-    background-color: var(--white);
+    background-color: transparent;
 }
 .btn span{
     color: var(--white-opacity-8);
