@@ -29,14 +29,25 @@ body{
 .btn{
     padding: 15px 20px;
     background-color: var(--purple);
-    border: none;
+    border: 1px solid var(--purple);
     border-radius: 5px;
     user-select: none;
     outline: none;
     color: var(--white);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.btn:hover{
+    border: 1px solid var(--purple);
+    color: var(--purple);
+    background-color: var(--white);
 }
 .btn span{
     color: var(--white-opacity-8);
+    transition: all 0.5s;
+}
+.btn:hover span{
+    color: var(--purple);
 }
 /* -------Header section start---------- */
 /* --------Navigation start----------- */
@@ -60,7 +71,12 @@ body{
 .navbar .navItems ul li:not(:last-child){
     margin-right: 50px;
     text-transform: capitalize;
-    font-weight: 500;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.navItems ul li:not(:last-child):hover{
+    color: var(--purple);
 }
 .bar{
     display: none;
